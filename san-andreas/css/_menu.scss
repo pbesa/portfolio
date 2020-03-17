@@ -1,0 +1,71 @@
+
+/*MENU*/
+.menu {
+	position: relative;
+	padding: 5px 0;
+	height: 50px;
+	background: $bg-subtle;
+	box-shadow: 1px 1px 8px #6c6868;
+	z-index: 2;
+
+	ul {
+		display: none;
+		height: 100vh;
+	}
+	
+	li {
+		display: block;
+		padding: 8%;
+		margin: 0;
+		
+		a {
+			font-size: 18px;
+		}
+		}
+	
+	a {
+		font: $f-sub;
+		font-size: 25px;
+		color: $c-light-gray;
+		transition: $trans;
+		&:hover {
+			color: $c-hover;
+		}
+	}
+}
+
+.icon-menu-icon,
+.icon-close-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 10px;
+	z-index: 999;
+	color: $c-darker;
+	transition: $trans;
+}
+
+
+.icon-menu-icon:hover,
+.icon-close-icon:hover{
+	color: $c-hover;
+}
+
+.show {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.9);
+	a {
+		font-size: 20px;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,422 @@
+* {
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+ul li {
+  list-style: none; }
+
+ul li a, a {
+  text-decoration: none; }
+
+/*MENU*/
+.menu {
+  position: relative;
+  padding: 5px 0;
+  height: 50px;
+  background: url(../imgs/handmadepaper.png);
+  box-shadow: 1px 1px 8px #6c6868;
+  z-index: 2; }
+  .menu ul {
+    display: none;
+    height: 100vh; }
+  .menu li {
+    display: block;
+    padding: 8%;
+    margin: 0; }
+    .menu li a {
+      font-size: 18px; }
+  .menu a {
+    font: 300 16px/120% "Muli", sans-serif;
+    font-size: 25px;
+    color: #d1d1d1;
+    transition: 0.5s ease 0s; }
+    .menu a:hover {
+      color: #b1ab20; }
+
+.icon-menu-icon,
+.icon-close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+  z-index: 999;
+  color: #606060;
+  transition: 0.5s ease 0s; }
+
+.icon-menu-icon:hover,
+.icon-close-icon:hover {
+  color: #b1ab20; }
+
+.show {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.9); }
+  .show a {
+    font-size: 20px; }
+
+.automatic-slider li {
+  height: 50vh; }
+.automatic-slider #slider1 {
+  background: url(../imgs/slider/123459307.jpg) no-repeat right;
+  background-size: cover; }
+.automatic-slider #slider2 {
+  background: url(../imgs/slider/sangria.jpg) no-repeat center;
+  background-size: cover; }
+.automatic-slider #slider3 {
+  background: url(../imgs/slider/barrels.jpg) no-repeat center;
+  background-size: cover; }
+.automatic-slider #slider4 {
+  background: url(../imgs/slider/food2.jpg) no-repeat center;
+  background-size: cover; }
+.automatic-slider #slider5 {
+  background: url(../imgs/slider/paring.jpg) no-repeat center;
+  background-size: cover; }
+
+.automatic-slider {
+  width: 100%; }
+
+.unslider {
+  position: relative; }
+
+.unslider-arrow {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 29px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: 0.5s ease 0s; }
+
+.unslider-arrow:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.7); }
+
+.unslider-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -24px; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?cwzmdv");
+  src: url("fonts/icomoon.eot?cwzmdv#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?cwzmdv") format("truetype"), url("fonts/icomoon.woff?cwzmdv") format("woff"), url("fonts/icomoon.svg?cwzmdv#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-close-icon:before {
+  content: "\e900"; }
+
+.icon-menu-icon:before {
+  content: "\e901"; }
+
+.icon-facebook2:before {
+  content: "\e902"; }
+
+.icon-instagram:before {
+  content: "\e903"; }
+
+.icon-twitter:before {
+  content: "\e904"; }
+
+.icon-youtube:before {
+  content: "\e905"; }
+
+.icon-circle-left:before {
+  content: "\e901"; }
+
+body {
+  background: url(../imgs/handmadepaper.png); }
+
+#logo {
+  background: url(../imgs/logos/logo-san-andreas.svg) no-repeat center;
+  background-size: cover;
+  height: 40px;
+  width: 100px;
+  margin: 0 2%;
+  float: left; }
+  #logo:hover {
+    opacity: 0.5; }
+
+header {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background: #fff;
+  overflow: hidden; }
+  header .background {
+    background: url(../imgs/background.png) no-repeat center;
+    background-size: cover;
+    width: 100%; }
+  header .slogan {
+    position: absolute;
+    height: 195px;
+    width: 104px;
+    top: 250px;
+    left: 20px;
+    background: url(../imgs/slogan.png) no-repeat center; }
+  header .head-wine {
+    height: 500px;
+    width: 200px;
+    background: url(../imgs/wines/wine-mock-pinot-grigio.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -55px;
+    top: 0; }
+  header .corkscrew {
+    background: url(../imgs/corkscrew.png) no-repeat center;
+    background-size: contain;
+    height: 259px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.container {
+  width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+.mid-sec {
+  margin-top: 5% 0; }
+  .mid-sec p {
+    width: 90%;
+    padding: 15% 3%;
+    font: 300 13px/180% "Muli", sans-serif;
+    color: #606060; }
+
+.bottles-sec, .pair {
+  margin: 5%;
+  background: #fff; }
+  .bottles-sec .bottle-box, .pair .bottle-box {
+    padding: 10px;
+    border: 1px #e0e0e0 solid;
+    position: relative;
+    overflow: hidden; }
+  .bottles-sec h3, .pair h3 {
+    padding: 5% 0;
+    font-family: "Prata", serif;
+    text-align: center;
+    color: #606060;
+    cursor: pointer;
+    border: 1px #e0e0e0 solid;
+    transition: 0.5s ease 0s; }
+    .bottles-sec h3:hover, .pair h3:hover {
+      color: #b1ab20; }
+  .bottles-sec p, .pair p {
+    font: 300 13px/180% "Muli", sans-serif;
+    text-align: center;
+    width: 180px;
+    padding: 10% 0;
+    color: #606060;
+    float: right; }
+  .bottles-sec #merlot, .pair #merlot {
+    background: url(../imgs/wines/wine-mock-merlot.png) no-repeat left top;
+    background-size: 30%;
+    background-position: 20px 0; }
+  .bottles-sec #cabern, .pair #cabern {
+    background: url(../imgs/wines/wine-mock-cabernet.png) no-repeat left top;
+    background-size: 30%;
+    background-position: 20px 0; }
+  .bottles-sec #chardo, .pair #chardo {
+    background: url(../imgs/wines/wine-mock-chardonnay.png) no-repeat left top;
+    background-size: 30%;
+    background-position: 20px 0; }
+  .bottles-sec #pinot-g, .pair #pinot-g {
+    background: url(../imgs/wines/wine-mock-pinot-grigio.png) no-repeat left top;
+    background-size: 30%;
+    background-position: 20px 0; }
+  .bottles-sec #pinot-n, .pair #pinot-n {
+    background: url(../imgs/wines/wine-mock-pinot-noir.png) no-repeat left top;
+    background-size: 30%;
+    background-position: 20px 0; }
+
+.active {
+  color: #b1ab20; }
+
+footer {
+  margin: 5% 0; }
+  footer .ft-col {
+    line-height: 2;
+    margin: 15px 0;
+    padding-left: 50px;
+    width: 100%;
+    float: left;
+    clear: both; }
+    footer .ft-col a {
+      font: 300 13px/180% "Muli", sans-serif;
+      color: #606060;
+      transition: 0.5s ease 0s; }
+      footer .ft-col a:hover {
+        color: #909090; }
+    footer .ft-col p {
+      font: 300 13px/180% "Muli", sans-serif;
+      color: #606060;
+      font: italic 13px/180% "Muli", sans-serif; }
+    footer .ft-col .sm {
+      float: left;
+      clear: both;
+      padding: 10px 0; }
+      footer .ft-col .sm a {
+        font-size: 18px;
+        margin-right: 10px; }
+    footer .ft-col .btn {
+      padding: 2px 30px;
+      float: left;
+      clear: both;
+      background: #606060;
+      color: #fff;
+      box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.75); }
+      footer .ft-col .btn:hover {
+        box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+        color: #fff; }
+  footer h4 {
+    font-family: "Prata", serif;
+    color: #b1ab20;
+    text-align: left; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li {
+      text-align: left; }
+
+#pairing {
+  background: url(../imgs/slider/wine-food.jpeg) no-repeat center;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  width: 100%; }
+  #pairing h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    font-family: "Prata", serif;
+    text-align: center;
+    text-shadow: 1px 1px 10px #000; }
+
+.pair {
+  color: #606060;
+  font: 300 13px/180% "Muli", sans-serif;
+  background: transparent; }
+  .pair ul {
+    background: rgba(96, 96, 96, 0.14); }
+  .pair h3:hover {
+    color: #606060;
+    cursor: auto; }
+  .pair h3.link:hover {
+    color: #b1ab20;
+    cursor: pointer; }
+
+@media screen and (min-width: 568px) {
+  .container {
+    width: 568px; }
+
+  header {
+    height: 85vh; }
+    header .corkscrew {
+      left: 20%;
+      width: 150px;
+      height: 100px; }
+    header .head-wine {
+      right: 5%; }
+    header .slogan {
+      left: 25%;
+      top: 100px; }
+
+  .bottles-sec p, .pair p {
+    width: 50%; }
+
+  .mid-sec p {
+    padding: 5% 0%; }
+
+  footer .ft-col {
+    width: 50%;
+    float: left;
+    clear: inherit; } }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%; }
+
+  header {
+    height: 50vh; }
+    header .corkscrew {
+      width: 250px;
+      height: 200px; }
+    header .slogan {
+      top: 220px; }
+
+  .bottles-sec p, .pair p {
+    margin-right: 20px; }
+
+  .menu ul {
+    height: auto; }
+  .menu li {
+    padding: 50px; } }
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: 1200px; }
+
+  header {
+    height: 100vh; }
+    header .corkscrew {
+      height: 350px;
+      width: 350px;
+      left: 0; }
+    header .slogan {
+      top: 400px;
+      left: 50px;
+      width: 200px;
+      height: 250px;
+      background-size: contain; }
+    header .head-wine {
+      height: 800px;
+      width: 400px; }
+
+  .bottles-sec, .pair {
+    width: 100%; }
+
+  .mid-sec {
+    float: left;
+    max-width: 50%;
+    margin: 5% 0; }
+
+  .ft-col {
+    max-width: 25%; }
+
+  .menu li {
+    padding: 30px; } }
+/*CLEARFIX*/
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
