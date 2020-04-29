@@ -1,331 +1,369 @@
-
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-    <meta charset="utf-8">
-    <title>Welcome to Santiago, Chile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/neutralize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,100|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-	<link rel="icon" type="image/png" href="imgs/favicon-stgo.png" />
+  <meta charset="utf-8">
+  <title>Welcome to Santiago, Chile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/neutralize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,100|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="imgs/favicon-stgo.png" />
 
-<!--JavaScrip-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/responsive-nav.js"></script>
-    
+  <!--JavaScrip-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/responsive-nav.js"></script>
+
 </head>
-    
-    <body>
-       
-<!--        Navigation Starts here -->
-        <div id="home">
-        <div class="overlay">
-        
-            <div class="container cf nav">
-		  <a href="#home" id="logo" data-scroll></a>
 
-      <nav class="nav-collapse">
-        <ul>
-          <li class="menu-item"><a href="#intro" data-scroll>Intro</a></li>
-          <li class="menu-item"><a href="#outdoors" data-scroll>Outdoors</a></li>
-          <li class="menu-item"><a href="#nightlife" data-scroll>Nightlife</a></li>
-        <li class="menu-item"><a href="#sightseeing" data-scroll>Sightseeing</a></li>
-            <li class="menu-item"><a href="#food" data-scroll>Food</a></li>
-        </ul>
-      </nav>
-            </div>
-<!--            NAVIGATION ENDS HERE-->
+<body>
+
+  <!--        Navigation Starts here -->
+  <div id="home">
+    <div class="overlay">
+
+      <div class="cf nav">
+        <div class="container">
+          <a href="#home" id="logo" data-scroll></a>
+
+          <nav class="nav-collapse">
+            <ul>
+              <li class="menu-item"><a href="#intro" data-scroll>Intro</a></li>
+              <li class="menu-item"><a href="#outdoors" data-scroll>Outdoors</a></li>
+              <li class="menu-item"><a href="#nightlife" data-scroll>Nightlife</a></li>
+              <li class="menu-item"><a href="#sightseeing" data-scroll>Sightseeing</a></li>
+              <li class="menu-item"><a href="#food" data-scroll>Food</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--            NAVIGATION ENDS HERE-->
       <div class="container cf">
-            <h1 class="bg-title">Welcome to Santiago, Chile</h1>
+        <h1 class="bg-title">Welcome to Santiago, Chile</h1>
         <a href="#intro" class="down" data-scroll></a>
-			</div>
-        </div>
-        </div>
-        
-<!--        Intro   -->
-    <div id="intro">
-        <div class="overlay">
-        <div class="title">
-            <h3>
-            Santiago is the capital and biggest city of Chile with over 5,000,000 people.</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--        Intro   -->
+  <div id="intro">
+    <div class="overlay">
+      <div class="title">
+        <h1>About</h1>
+        <h3>
+          Santiago is the capital and biggest city of Chile with over 5,000,000 people.</h3>
         <h3>Surprising, cosmopolitan, energetic, sophisticated and worldly, it is a city of syncopated cultural currents, madhouse parties, expansive museums and top-flight restaurants.</h3>
-            <h3>No wonder 40 percent of Chileans call the leafy capital city home.
+        <h3>No wonder 40% of Chileans call the leafy capital city home.
         </h3>
-        </div>
-        <a href="#outdoors" class="down" data-scroll></a>
-        </div>
-        </div>
-        
-<!--        Outdoors   -->
-    <div id="outdoors">
-        <div class="overlay">
-        <div class="title">
-            <h2>Get away from the crowds and experience the best of the city's outskirts.</h2>
-        
-       <a href="#" class="open-box">Find Out More</a>
-                    </div>
+      </div>
+      <a href="#outdoors" class="down" data-scroll></a>
+    </div>
+  </div>
 
-            <div class="modal-container" id="show-od">
-				
-				
-            <a class="close-btn"></a>
-                
+  <!--        Outdoors   -->
+  <div id="outdoors">
+    <div class="overlay">
+      <div class="title">
+        <h1>Outdoors</h1>
+        <h2>Get away from the crowds and experience the best of the city's outskirts.</h2>
+
+        <a href="#" class="open-box">Find Out More</a>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-container" id="show-od">
+        <div class="modal-wrap">
+          <a class="close-btn"></a>
+          <div class="category cf">
             <h2>Skiing</h2>
-            <p>
-        There is a long list of places to Ski in Chile. Here are the Best equiped in the Central Zone are.
-        </p>
-                <div class="info-block">
-                <h3>Portillo</h3>
-                <div class="pic-size" id="portillo"></div>
-                <p>Portillo is located 92 miles from Santiago, in the same road that leads to Mendoza, crossing The Andes Valley. </p>
-                </div>
-                
-                <div class="info-block">
-                <h3>Valle Nevado</h3>
-                <div class="pic-size" id="vallenevado"></div>
-                <p>This center is located 27 miles from Santiago, by the Farellones road, and was inaugurated in 1988. Its three hotels have a lodging capacity for 800 people (there are not refuges), it also possesses complete equipments that turns it into the biggest Ski Resort in Chile. Ski June, July, August, September and October 2006. Just 35 miles from Santiago's International airport.</p>
-                </div>
-                <a href="http://www.chileanski.com/eng/ski-resorts.htm" class="seemore-btn" target="_blank" class="seemore-btn">See More</a>
-                
-                <h2>Wine Tours</h2>
-<p>Chile is the fifth largest exporter of wines in the world, and the ninth largest producer.</p>
-                <div class="info-block">
-                <h3>Cousino Macul Vineyard</h3>
-                    <div class="pic-size" id="cousino"></div>
-                <p>If you are planning a visit to any Chilean wineries, you must make a stop at Cousino Macul.   Not only is it a 30 minute drive from the center of Santiago, but its a time capsule of the Chilean wine industry.
-</p>
-                </div>
-                <div class="info-block">
-                <h3>Uncorked Wine Tours</h3>
-                <div class="pic-size" id="uncorked"></div>
-
-                <p>Or sure you would enjoy experiencing some of the Chilean premium wineries in the wine regions of Colchagua, Casablanca or Aconcagua on a semi-private or a private wine tour.</p>
-                </div>
-                <a href="http://www.tripadvisor.com/Attraction_Review-g294305-d1903897-Reviews-Chilean_Wine_Lovers_Private_Tours-Santiago_Santiago_Metropolitan_Region.html" target="_blank" class="seemore-btn">See More</a>
-                <h2>Parks</h2>
-				<p>An overview of the most beautiful inner-city parks of Santiago</p>
-                <div class="info-block">
-                <h3>Metropolitan Park</h3>
-				   <div class="pic-size" id="metropolitan"></div>
-                <p>The Santiago Metropolitan Park is an urban park located within the city of Santiago. Consisting of the San Cristóbal, Chacarillas and Los Gemelos hills, and the areas of Tupahue, Lo Saldés, Pirámide and Bosque Santiago and covers around 722 hectares, making it the largest urban park in Chile and one of the largest in the world.</p>
-                    </div>
-                 <div class="info-block">
-                <h3>Quinta Normal Park</h3>
-                <div class="pic-size" id="quintanormal"></div>
-
-                <p>Quinta Normal Park is an urban park in the city of Santiago, Chile. The park is in a commune, or district of the same name, Quinta Normal. The park is bounded by Matucana Avenue to the east, Portales Avenue to the south and Santo Domingo Street to the north. It is home to several museums, including the Chilean National Museum of Natural History. Near the park is the Museum of Memory and Human Rights. The park is also near a public library.</p>
-                    </div>
-                
-                 <a href="#" class="seemore-btn">See More</a>
-       
-           
+            <p>There is a long list of places to Ski in Chile. Here are the Best equiped in the Central Zone are.</p>
+            <div class="info-block">
+              <h3>Portillo</h3>
+              <div class="pic-size" id="portillo"></div>
+              <p>Portillo is located 92 miles from Santiago, in the same road that leads to Mendoza, crossing The Andes Valley. </p>
             </div>
-            
-            <a href="#nightlife" class="down" data-scroll></a>
-    </div>
+            <div class="info-block">
+              <h3>Valle Nevado</h3>
+              <div class="pic-size" id="vallenevado"></div>
+              <p>This center is located 27 miles from Santiago, by the Farellones road, and was inaugurated in 1988. Its three hotels have a lodging capacity for 800 people (there are not refuges), it also possesses complete equipments that turns it
+                into the biggest Ski Resort in Chile. Ski June, July, August, September and October 2006. Just 35 miles from Santiago's International airport.</p>
+            </div>
+            <a href="http://www.chileanski.com/eng/ski-resorts.htm" class="seemore-btn" target="_blank" class="seemore-btn">See More</a>
+          </div>
+
+          <div class="category cf">
+            <h2>Wine Tours</h2>
+            <p>Chile is the fifth largest exporter of wines in the world, and the ninth largest producer.</p>
+            <div class="info-block">
+              <h3>Cousino Macul Vineyard</h3>
+              <div class="pic-size" id="cousino"></div>
+              <p>If you are planning a visit to any Chilean wineries, you must make a stop at Cousino Macul. Not only is it a 30 minute drive from the center of Santiago, but its a time capsule of the Chilean wine industry.
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>Uncorked Wine Tours</h3>
+              <div class="pic-size" id="uncorked"></div>
+
+              <p>Or sure you would enjoy experiencing some of the Chilean premium wineries in the wine regions of Colchagua, Casablanca or Aconcagua on a semi-private or a private wine tour.</p>
+            </div>
+            <a href="http://www.tripadvisor.com/Attraction_Review-g294305-d1903897-Reviews-Chilean_Wine_Lovers_Private_Tours-Santiago_Santiago_Metropolitan_Region.html" target="_blank" class="seemore-btn">See More</a>
+
+          </div>
+          <div class="category cf">
+            <h2>Parks</h2>
+            <p>An overview of the most beautiful inner-city parks of Santiago</p>
+            <div class="info-block">
+              <h3>Metropolitan Park</h3>
+              <div class="pic-size" id="metropolitan"></div>
+              <p>The Santiago Metropolitan Park is an urban park located within the city of Santiago. Consisting of the San Cristóbal, Chacarillas and Los Gemelos hills, and the areas of Tupahue, Lo Saldés, Pirámide and Bosque Santiago and covers
+                around
+                722 hectares, making it the largest urban park in Chile and one of the largest in the world.</p>
+            </div>
+            <div class="info-block">
+              <h3>Quinta Normal Park</h3>
+              <div class="pic-size" id="quintanormal"></div>
+
+              <p>Quinta Normal Park is an urban park in the city of Santiago, Chile. The park is in a commune, or district of the same name, Quinta Normal. The park is bounded by Matucana Avenue to the east, Portales Avenue to the south and Santo
+                Domingo Street to the north. It is home to several museums, including the Chilean National Museum of Natural History. Near the park is the Museum of Memory and Human Rights. The park is also near a public library.</p>
+            </div>
+
+            <a href="#" class="seemore-btn">See More</a>
+
+          </div>
+
         </div>
-        
- <!--        Nightlife   -->
-    <div id="nightlife">
-        <div class="overlay">
-        <div class="title">
-            <h2>
-        Santiago's nightlife is exuberant and welcoming, with less of the pretentiousness often found in more European cities.
-        </h2>
-        
+      </div>
+
+
+      <a href="#nightlife" class="down" data-scroll></a>
+    </div>
+  </div>
+
+  <!--        Nightlife   -->
+  <div id="nightlife">
+    <div class="overlay">
+      <div class="title">
+        <h1>Nightlife</h1>
+        <h2>Santiago's nightlife is exuberant and welcoming, with less of the pretentiousness often found in more European cities.</h2>
+
         <a href="#show-ntlife" class="open-box">Find Out More</a>
-            </div>
-              
-            <div class="modal-container" id="show-ntlife">
-            <a class="close-btn"></a>
-              <h2>Clubs &amp; Bars</h2>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-container" id="show-ntlife">
+        <div class="modal-wrap">
+          <a class="close-btn"></a>
+          <div class="category cf">
+            <h2>Clubs &amp; Bars</h2>
             <p>
-        Most of Santiago's nightlife spots are located outside the downtown area. The Bellavista district is home to most of the buzzing bars, restaurants and nightclubs.      </p>
-				
-                <div class="info-block">
-                <h3>La Piojera</h3>
-                <div class="pic-size" id="lapiojera"></div>
+              Most of Santiago's nightlife spots are located outside the downtown area. The Bellavista district is home to most of the buzzing bars, restaurants and nightclubs. </p>
 
-                <p>For the most atmospheric tipple in Santiago, head to the central La Piojera, a traditional beer hall-style drinking den, where carousing and high spirits flow at most hours. When there order a "Terremoto", yes, and "earthquake", the most traditional cocktail.</p>
-                </div>
-                
-                <div class="info-block">
-                <h3>Bar Dos Gardenias</h3>
-                <div class="pic-size" id="dosgardenias"></div>
+            <div class="info-block">
+              <h3>La Piojera</h3>
+              <div class="pic-size" id="lapiojera"></div>
 
-                <p>You are never short of bar options in Bellavista, but one of the most welcoming options is Bar Dos Gardenias, which has regular salsa nights. It opened in 2004 (and named after the Buena Vista Social Club number) and has regular live music. It’s open to 2am or 3am, and closed Sunday and Monday. It serves bar snacks such as pizzas, and a charcuterie selection.</p>
-                </div>
-                
-
-                <div class="info-block">
-                <h3>Flannery's Irish Geo Pub</h3>
-                <div class="pic-size" id="flannery"></div>
-
-                <p>Perhaps the biggest magnet for overseas visitors is Flannery's Irish Geo Pub, in the financial district of Las Condes, where sports coverage and proper pints of Guinness draw large crowds. It’s open until late everyday and serves regular bar snacks and food. There’s live music on Friday nights and ‘Irish sessions’ on Sunday evenings between 1900-2100. St Patricks Day is, obviously, huge, but it also throws itself into any other festivity with gusto.
-</p>
-                </div>
-                <div class="info-block">
-                <h3>Bar Constitucion</h3>
-                <div class="pic-size" id="barconsti"></div>
-
-                <p>Probably the coolest place in Santiago and its suitably understated, of course – exposed brick walls, no sign outside. There’s something on every night from Tuesday to Saturdays at this Providencia venue. It only opened in 2008 and was started as a restaurant, but now its best known for its live music, cocktails and DJ roster. It also hosts artists and avant garde evenings.</p>
-                </div>
-
-            
-                
+              <p>For the most atmospheric tipple in Santiago, head to the central La Piojera, a traditional beer hall-style drinking den, where carousing and high spirits flow at most hours. When there order a "Terremoto", yes, and "earthquake", the
+                most traditional cocktail.</p>
             </div>
-           
-            
-        
-            <a href="#sightseeing" class="down" data-scroll></a>
+
+            <div class="info-block">
+              <h3>Bar Dos Gardenias</h3>
+              <div class="pic-size" id="dosgardenias"></div>
+
+              <p>You are never short of bar options in Bellavista, but one of the most welcoming options is Bar Dos Gardenias, which has regular salsa nights. It opened in 2004 (and named after the Buena Vista Social Club number) and has regular
+                live
+                music. It’s open to 2am or 3am, and closed Sunday and Monday. It serves bar snacks such as pizzas, and a charcuterie selection.</p>
+            </div>
+
+
+            <div class="info-block">
+              <h3>Flannery's Irish Geo Pub</h3>
+              <div class="pic-size" id="flannery"></div>
+
+              <p>Perhaps the biggest magnet for overseas visitors is Flannery's Irish Geo Pub, in the financial district of Las Condes, where sports coverage and proper pints of Guinness draw large crowds. It’s open until late everyday and serves
+                regular bar snacks and food. There’s live music on Friday nights and ‘Irish sessions’ on Sunday evenings between 1900-2100. St Patricks Day is, obviously, huge, but it also throws itself into any other festivity with gusto.
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>Bar Constitucion</h3>
+              <div class="pic-size" id="barconsti"></div>
+
+              <p>Probably the coolest place in Santiago and its suitably understated, of course – exposed brick walls, no sign outside. There’s something on every night from Tuesday to Saturdays at this Providencia venue. It only opened in 2008 and
+                was
+                started as a restaurant, but now its best known for its live music, cocktails and DJ roster. It also hosts artists and avant garde evenings.</p>
+            </div>
+          </div>
         </div>
+
+      </div>
+
+
+
+      <a href="#sightseeing" class="down" data-scroll></a>
     </div>
-        
-    <!--        Sightseeing   -->
-    <div id="sightseeing">
-        <div class="overlay">
-        <div class="title">
-            <h2>
-        Since Santiago is such a big city, you will sometimes need to travel from one side of the city to the other. One way to get around is using the very efficient Metro.
-        </h2>
-       
-     
-<!--LIGHTBOX CONTENT -->
+  </div>
 
-           <a href="#show-ss" class="open-box">Find Out More</a>
-              </div>
-            <div class="modal-container" id="show-ss">
-            <a class="close-btn"></a>
-			<h2>Sightseeings</h2>
+  <!--        Sightseeing   -->
+  <div id="sightseeing">
+    <div class="overlay">
+      <div class="title">
+        <h1>Sightseeings</h1>
+        <h2>
+          Since Santiago is such a big city, you will sometimes need to travel from one side of the city to the other. One way to get around is using the very efficient Metro.
+        </h2>
+        <a href="#show-ss" class="open-box">Find Out More</a>
+      </div>
+
+      <!--LIGHTBOX CONTENT -->
+      <div class="modal-overlay"></div>
+      <div class="modal-container" id="show-ss">
+        <div class="modal-wrap">
+          <a class="close-btn"></a>
+          <div class="category cf">
+            <h2>Sightseeings</h2>
             <p>
-        Some of the main attractions and places to visit in Santiago are: 
-        </p>
-                <div class="info-block">
-                <h3>Plaza de Armas (Main Square)</h3>
-                <div class="pic-size" id="plazadearmas"></div>
+              Some of the main attractions and places to visit in Santiago are:
+            </p>
+            <div class="info-block">
+              <h3>Plaza de Armas (Main Square)</h3>
+              <div class="pic-size" id="plazadearmas"></div>
 
-                <p>The Plaza de Armas is the epicentre of Santiago, both literally - it is where all distances to the rest of Chile are measured from - and symbolically.
-Surrounded by the neoclassical facades of Santiago's most important buildings.</p>
-                </div>
-                
-                <div class="info-block">
-                <h3>Museo Nacional de Bellas Artes</h3>
-                <div class="pic-size" id="bellasartes"></div>
-
-                <p>Paintings, drawings, and sculpture by 16th- to 20th-century Chilean and European artists fill the grand National Museum of Fine Arts. The elegant, neoclassical building, which was originally intended to house the city's school of fine arts, has an impressive glass-domed ceiling that illuminates the main hall.</p>
-                </div>
-                
-                <div class="info-block">
-                <h3>San Cristobal Hill</h3>
-                <div class="pic-size" id="sancristobal"></div>
-
-                <p>For a gut-churning ride and matchless views of the city, take the cable car over Cerro San Cristóbal - rounded off with a plunge in the hilltop pool, Piscina Tupahue.</p>
-                </div>
-                <div class="info-block">
-                <h3>Santa Lucia Hill</h3>
-                <div class="pic-size" id="santalucia"></div>
-
-                <p>Climbing up the exuberantly landscaped Santa Lucía hill - via a maze of swirling stairways, turrets and fountains - is an essential part of the Santiago experience. Your reward is sweeping views over the city, impressive even when the smog is out in force.</p>
-                </div>
-                <div class="info-block">
-                <h3>La Moneda Palace</h3>
-                <div class="pic-size" id="lamoneda"></div>
-
-                <p>The actual seat of the President of the Republic of Chile is located at the heart of Santiago. It was designed by Italian architect Joaquín Toesca. Construction began in 1784 and was opened in 1805, while still under construction. In 1930, a public square was built in front of the palace, the Plaza de la Constitución (Constitution Square).</p>
-                    </div>
-                 <div class="info-block">
-                <h3>Costanera Center</h3>
-                <div class="pic-size" id="costanera"></div>
-                <p>The Costanera Center is a business and commercial complex that includes a six-floor shopping mall, the Gran Torre Santiago and three other skyscrapers - two high-end hotels and an office building.</p>
-                    </div>
-                 
-        
-        
-                
+              <p>The Plaza de Armas is the epicentre of Santiago, both literally - it is where all distances to the rest of Chile are measured from - and symbolically.
+                Surrounded by the neoclassical facades of Santiago's most important buildings.</p>
             </div>
-     
-       
-  
 
-             <a href="#food" class="down" data-scroll></a>
+            <div class="info-block">
+              <h3>Museo Nacional de Bellas Artes</h3>
+              <div class="pic-size" id="bellasartes"></div>
+
+              <p>Paintings, drawings, and sculpture by 16th- to 20th-century Chilean and European artists fill the grand National Museum of Fine Arts. The elegant, neoclassical building, which was originally intended to house the city's school of
+                fine
+                arts, has an impressive glass-domed ceiling that illuminates the main hall.</p>
             </div>
+
+            <div class="info-block">
+              <h3>San Cristobal Hill</h3>
+              <div class="pic-size" id="sancristobal"></div>
+
+              <p>For a gut-churning ride and matchless views of the city, take the cable car over Cerro San Cristóbal - rounded off with a plunge in the hilltop pool, Piscina Tupahue.</p>
+            </div>
+            <div class="info-block">
+              <h3>Santa Lucia Hill</h3>
+              <div class="pic-size" id="santalucia"></div>
+
+              <p>Climbing up the exuberantly landscaped Santa Lucía hill - via a maze of swirling stairways, turrets and fountains - is an essential part of the Santiago experience. Your reward is sweeping views over the city, impressive even when
+                the
+                smog is out in force.</p>
+            </div>
+            <div class="info-block">
+              <h3>La Moneda Palace</h3>
+              <div class="pic-size" id="lamoneda"></div>
+
+              <p>The actual seat of the President of the Republic of Chile is located at the heart of Santiago. It was designed by Italian architect Joaquín Toesca. Construction began in 1784 and was opened in 1805, while still under construction.
+                In
+                1930, a public square was built in front of the palace, the Plaza de la Constitución (Constitution Square).</p>
+            </div>
+            <div class="info-block">
+              <h3>Costanera Center</h3>
+              <div class="pic-size" id="costanera"></div>
+              <p>The Costanera Center is a business and commercial complex that includes a six-floor shopping mall, the Gran Torre Santiago and three other skyscrapers - two high-end hotels and an office building.</p>
+            </div>
+
+
+          </div>
         </div>
-        
-        <!--        food   -->
+      </div>
 
-    <div id="food">
-        <div class="overlay">
-        <div class="title">
-            <h2>
-            From hearty casseroles, warming soups, flavorful sausages to refreshing shellfish, Chilean cooking is an unmissable experience for any visitor.
+
+
+
+      <a href="#food" class="down" data-scroll></a>
+    </div>
+  </div>
+
+  <!--        food   -->
+
+  <div id="food">
+    <div class="overlay">
+      <div class="title">
+        <h1>Food</h1>
+        <h2>
+          From hearty casseroles, warming soups, flavorful sausages to refreshing shellfish, Chilean cooking is an unmissable experience for any visitor.
         </h2>
-        
+
         <a href="#show-food" class="open-box">Find Out More</a>
-        </div>
-            <div class="modal-container" id="show-food">
-            <a class="close-btn"></a>
-             <h2>Cuisine</h2>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-container" id="show-food">
+        <div class="modal-wrap">
+          <a class="close-btn"></a>
+          <div class="category cf">
+            <h2>Cuisine</h2>
             <p>
-       Chilean cuisine stems mainly from the combination of traditional Spanish cuisine, Chilean Indigenous culture and local ingredients, with later important influences from other European cuisines, particularly from Germany, Italy and France.
-        </p>
-                <div class="info-block">
-                <h3>Empanada de Pino</h3>
-                <div class="pic-size" id="empanadas"></div>
+              Chilean cuisine stems mainly from the combination of traditional Spanish cuisine, Chilean Indigenous culture and local ingredients, with later important influences from other European cuisines, particularly from Germany, Italy and
+              France.
+            </p>
+            <div class="info-block">
+              <h3>Empanada de Pino</h3>
+              <div class="pic-size" id="empanadas"></div>
 
-                <p>The most traditional empanada filling is called "pino". Pino is a seasoned mixture of ground beef, onions, raisins, black olives, and hard boiled eggs. </p>
-                </div>
-                
-                <div class="info-block">
-                <h3>Pastel de Choclo</h3>
-                <div class="pic-size" id="pastelchoclo"></div>
+              <p>The most traditional empanada filling is called "pino". Pino is a seasoned mixture of ground beef, onions, raisins, black olives, and hard boiled eggs. </p>
+            </div>
 
-                <p>Pastel de choclo (Corn Pie), is a pastel food based on sweetcorn or choclo, the quechua word for “tender corn”, or the new corn of the season. First documented as a dish in Peru, it is now a typical Argentine, Bolivian, Chilean and Peruvian dish.</p>
-                </div>
-                
+            <div class="info-block">
+              <h3>Pastel de Choclo</h3>
+              <div class="pic-size" id="pastelchoclo"></div>
 
-                <div class="info-block">
-                <h3>Sopaipillas</h3>
-                <div class="pic-size" id="sopaipillas"></div>
+              <p>Pastel de choclo (Corn Pie), is a pastel food based on sweetcorn or choclo, the quechua word for “tender corn”, or the new corn of the season. First documented as a dish in Peru, it is now a typical Argentine, Bolivian, Chilean and
+                Peruvian dish.</p>
+            </div>
 
-                <p>A sopaipilla is a kind of fried pastry and a type of quick bread served in several regions with Spanish heritage in the Americas. The word sopaipilla is the diminutive of sopaipa, a word that entered Spanish from the Mozarabic language of Al-Andalus.
-</p>
-                </div>
-                <div class="info-block">
-                <h3>Parmesan Machas</h3>
-                <div class="pic-size" id="machas"></div>
 
-                <p>Machas la parmesana or “Parmesan machas” is a dish made with the macha. This is a saltwater clam, a bivalve that is native to Chile. This bivalve is known scientifically as Mesodesma donacium and in English is called either the pink clam, or the surf clam. The dish also includes Parmesan cheese.</p>
-                </div>
-				<div class="info-block">
-                <h3>Cazuela De Vacuno</h3>
-                <div class="pic-size" id="cazu"></div>
+            <div class="info-block">
+              <h3>Sopaipillas</h3>
+              <div class="pic-size" id="sopaipillas"></div>
 
-                <p>Chilean cazuela is a very flexible homemade stew- you can use lamb, chicken or pork in the recipe, but the classic version is made with beef. In each dish you can't forget to put at least one small piece of meat, a potato, a slice of pumpkin and a portion of corn on the cob, if in season. This dish is enjoyed during summer and winter; it's truly comforting to eat and share with loved ones.</p>
-                </div>
-				<div class="info-block">
-                <h3>Chorrillana</h3>
-                <div class="pic-size" id="chorrillana"></div>
+              <p>A sopaipilla is a kind of fried pastry and a type of quick bread served in several regions with Spanish heritage in the Americas. The word sopaipilla is the diminutive of sopaipa, a word that entered Spanish from the Mozarabic
+                language
+                of Al-Andalus.
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>Parmesan Machas</h3>
+              <div class="pic-size" id="machas"></div>
 
-                <p>Chorrillana is a typical Chilean dish. Consisting of a plate of sliced beef with french fries, scrambled or fried eggs, and fried onions.Because of its large size, it is usually served as a dish to share.</p>
-                </div>
-            
-            
+              <p>Machas la parmesana or “Parmesan machas” is a dish made with the macha. This is a saltwater clam, a bivalve that is native to Chile. This bivalve is known scientifically as Mesodesma donacium and in English is called either the pink
+                clam, or the surf clam. The dish also includes Parmesan cheese.</p>
+            </div>
+            <div class="info-block">
+              <h3>Cazuela De Vacuno</h3>
+              <div class="pic-size" id="cazu"></div>
 
+              <p>Chilean cazuela is a very flexible homemade stew- you can use lamb, chicken or pork in the recipe, but the classic version is made with beef. In each dish you can't forget to put at least one small piece of meat, a potato, a slice
+                of
+                pumpkin and a portion of corn on the cob, if in season. This dish is enjoyed during summer and winter; it's truly comforting to eat and share with loved ones.</p>
+            </div>
+            <div class="info-block">
+              <h3>Chorrillana</h3>
+              <div class="pic-size" id="chorrillana"></div>
+
+              <p>Chorrillana is a typical Chilean dish. Consisting of a plate of sliced beef with french fries, scrambled or fried eggs, and fried onions.Because of its large size, it is usually served as a dish to share.</p>
+            </div>
+
+
+          </div>
         </div>
-        
-             <a href="#home" data-scroll class="down backhome"></a>
-        </div>
-        </div>
-               
+      </div>
 
-            
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script src="js/script.js"></script>
-    </body>
+      <a href="#home" data-scroll class="down backhome"></a>
+    </div>
+  </div>
+
+
+
+  <script src="js/fastclick.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/fixed-responsive-nav.js"></script>
+  <script src="js/script.js"></script>
+</body>
 
 </html>
