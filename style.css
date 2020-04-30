@@ -49,17 +49,17 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #000;
+   color: #aaa;
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: #955;
+   color: #aaa;
    text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   color: #aaa;
    text-align: center;
 }
 
