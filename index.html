@@ -1,326 +1,134 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>BesaDesigns - Paulette Besa UX/UI Designer</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+</head>
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<style>
 
-    <link rel="stylesheet" href="css/aos.css">
+body {
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
+}
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
 
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+}
 
-    <div class="KW_progressContainer">
-      <div class="KW_progressBar">
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
 
-      </div>
-    </div>
-    <div class="page">
-    <nav id="colorlib-main-nav" role="navigation">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-      <div class="js-fullheight colorlib-table">
-        <div class="img"></div>
-        <div class="colorlib-table-cell js-fullheight">
-          <div class="row no-gutters">
-            <div class="col-md-12 text-center">
-              <h1 class="mb-4"><a href="index.html" class="logo">Paulette Besa</a></h1>
-              <ul>
-                <li class="active"><a href="index.html"><span><small>01</small>Home</span></a></li>
-                <li><a href="about.html"><span><small>02</small>Resume</span></a></li>
-                <!-- <li><a href="services.html"><span><small>03</small>Services</span></a></li> -->
-                <!-- <li><a href="portfolio.html"><span><small>04</small>Portfolio</span></a></li> -->
-                <!-- <li><a href="blog.html"><span><small>05</small>Blog</span></a></li> -->
-                <!-- <li><a href="index.html#contact"><span><small>06</small>Contact</span></a></li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
 
-    <div id="colorlib-page">
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="colorlib-navbar-brand">
-                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/logo1.svg);"></span>Paulette Besa</a>
-              </div>
-              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-            </div>
-          </div>
-        </div>
-      </header>
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-      <section class="home-slider owl-carousel js-fullheight">
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <span id="glasses"></span>
-                <p><a href="#" class="scroll">Hello! I'm</a></p>
-                <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Paulette Besa</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+::-moz-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <p><a href="#" class="scroll">I'm a</a></p>
-                <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">UX/UI Designer</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END slider -->
+:-ms-input-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-      <section class="ftco-section about-section">
-        <div class="container">
-          <div class="row d-flex" data-scrollax-parent="true">
-            <div class="col-md-4 author-img" style="background-image: url(images/pb-pf.jpg); background-position: right;" data-scrollax=" properties: { translateY: '-70%'}"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-6 wrap ftco-animate">
-              <div class="about-desc">
-                <h1 class="bold-text">About</h1>
-                <div class="p-5">
-                  <h2 class="mb-5">Hi! I'm Paulette Besa</h2>
-                  <p>Born and raised in Santiago, Chile. I’ve been living in Orlando since 2009.
-        					I graduated from Valencia College in Graphic &amp; Interactive Design in Dec 2016 and I've been learning more and more since. </p>
-        					<p>In summary, I am a multilingual UX/UI designer and Front-End developer who enjoys creating new efficient and optimized user-centered solutions in a collaborative team and who is willing to grow professionally and learn something new everyday.</p>
-                  <p><a href="about.html#exp" class="button">See my resume here</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+</style>
+
+<body>
+
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-      <section class="ftco-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>Portfolio</span>
-              <h2>Checkout my work</h2>
-            </div>
-          </div>
-          <div class="row no-gutters">
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="project1.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/projects/chile_poster1.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">Branding</h4>
-              <h2 class="heading"><a href="portfolio-single.html">Posters</a></h2>
-              <p>Here's a compilation of a few posters and banners I've created.</p>
-              <p><a class="button" href="project1.html">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="stgo-website/index.html" target="_blank" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/projects/stgo-logo2-01.svg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Web Design</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Santiago Website</a></h2>
-              <p>Another travelling and information project about a specific city. This a ficticious website was designed and code it from scratch using subtle CSS animations and jQuery.</p>
-              <p><a class="button" href="stgo-website/index.html" target="_blank">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="san-andreas/index.html" target="_blank" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/projects/logo-san-andreas.svg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">Branding &amp; Web Design</h4>
-              <h2 class="heading"><a href="portfolio-single.html">San Andreas Fault Wine</a></h2>
-              <p>This project was creating a brand and them making it's website. I created this wine from California named San Andreas Fault with different varieties of top notch wine.</p>
-              <p><a class="button" href="san-andreas/index.html" target="_blank">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="project2.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/projects/craigslist.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Application</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Craigslist App</a></h2>
-              <p>This is a Craigslist third party application that allows users to post ads and find postings of their interest.</p>
-              <p><a class="button" href="project2.html">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="project3.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/projects/ehm-cover.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">Branding</h4>
-              <h2 class="heading"><a href="project3.html">Elite Hard Money</a></h2>
-              <p>Elite Hard Money is a hard money loan company that wants to be exclusive with
-              their clients, providing impecable costumer services to investors.</p>
-              <p><a class="button" href="project3.html">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="project4.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image:url('images/projects/pip2x.png')" data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Illustrations</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Illustrations potpourri</a></h2>
-              <p>Variety of different illustrations made with Abode illustrator.</p>
-              <p><a class="button" href="project4.html">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="project5.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/projects/Dr-Trent2.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Animations</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Animations potpourri</a></h2>
-              <p>Variety of different animations made either with After Effects and illustrator vectors, or css animations.</p>
-              <p><a class="button" href="project5.html">View Project</a></p>
-            </div>
-          </div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 
-        </div>
-        </div>
-      </section>
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
 
-      <!-- <section class="ftco-section ftco-counter" id="section-counter">
-        <div class="container">
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>Portfolio</span>
-              <h2>I love to share my achievements</h2>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-start">
-            <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">Clients</span>
-                  <strong class="number" data-number="420">0</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">Project done</span>
-                  <strong class="number" data-number="890">0</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-end">
-            <div class="col-md-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">Cups of coffee</span>
-                  <strong class="number" data-number="1000">0</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <footer class="ftco-footer ftco-bg-dark ftco-section" id="contact" data-scrollax-parent="true">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-5 text-center">
-              <div class="ftco-footer-widget mb-5">
-                <ul class="ftco-footer-social list-unstyled">
-                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/paulette-besa/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                  <!-- <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> -->
-                </ul>
-              </div>
-              <div class="ftco-footer-widget">
-                <h2 class="mb-3">Contact Me</h2>
-                <p class="h3 email"><a href="mailto:paulette@besadesigns.com">paulette@besadesigns.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-
-              <p style="opacity:0.1;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ef5c5c"/></svg></div>
-
-      </div>
-
-    </div>
+	<script type="text/javascript">
+	"use strict";
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+	function loadPage(pwd) {
 
-  </body>
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+</body>
 </html>
