@@ -6784,7 +6784,6 @@ body {
     overflow: hidden;
     background-color: #121212;
     content: "";
-    display: table;
     table-layout: fixed;
     z-index: 999; }
   body .KW_progressBar {
@@ -6974,17 +6973,15 @@ h1, h2, h3, h4, h5,
           transform: scaleX(1); }
 
 header {
-  padding: 2em 0;
-  position: absolute;
+  padding: 1em 0;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9;
-  margin: 0 auto; }
-  @media (max-width: 767.98px) {
-    header {
-      padding: 2em 0;
-      position: absolute; } }
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff; }
   header .colorlib-navbar-brand {
     float: left; }
     header .colorlib-navbar-brand .colorlib-logo {
