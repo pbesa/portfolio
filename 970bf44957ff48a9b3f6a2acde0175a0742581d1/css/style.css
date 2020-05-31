@@ -6784,7 +6784,6 @@ body {
     overflow: hidden;
     background-color: #121212;
     content: "";
-    display: table;
     table-layout: fixed;
     z-index: 999; }
   body .KW_progressBar {
@@ -6974,17 +6973,15 @@ h1, h2, h3, h4, h5,
           transform: scaleX(1); }
 
 header {
-  padding: 2em 0;
-  position: absolute;
+  padding: 1em 0;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9;
-  margin: 0 auto; }
-  @media (max-width: 767.98px) {
-    header {
-      padding: 2em 0;
-      position: absolute; } }
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff; }
   header .colorlib-navbar-brand {
     float: left; }
     header .colorlib-navbar-brand .colorlib-logo {
@@ -7360,17 +7357,18 @@ header {
   width: 100%;
   border-bottom: 1px solid #1a1a1a;
   float: left; }
-  .exp-wrap .desc, .exp-wrap .year {
-    float: left; }
-  .exp-wrap .desc {
-    width: calc(100% - 150px); }
-    .exp-wrap .desc h4 span {
+  .exp-wrap .role {
+    width: 100%; }
+    .exp-wrap .role h4 span {
       color: #8c8c8c;
       font-weight: 300; }
-    .exp-wrap .desc .location {
+    .exp-wrap .role .location {
       margin-bottom: 0; }
+  .exp-wrap .desc {
+    width: 100%; }
   .exp-wrap .year {
-    width: 150px; }
+    width: 100%;
+    color: #ef5c5c; }
 
 .progress-wrap {
   margin-bottom: 30px; }
@@ -7378,12 +7376,23 @@ header {
     font-size: 20px;
     margin-bottom: 10px; }
 
+.skills h4 {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  background: #ef5c5c;
+  padding: 15px 25px;
+  border-radius: 30px; }
+
 .progress {
   height: 4px;
   box-shadow: none;
   background: #1f1f1f;
   overflow: visible;
-  border-radius: 0; }
+  border-radius: 0;
+  margin-top: 20px;
+  transition: 0.5s all ease;
+  display: none; }
 
 .progress-bar {
   background: #ef5c5c;
@@ -7406,8 +7415,8 @@ header {
     border-radius: 50%; }
   .progress-bar span {
     position: absolute;
-    top: -34px;
-    right: 0;
+    bottom: -23px;
+    right: -7px;
     color: #6c757d; }
   .progress-bar.color-1 {
     background: #ef5c5c; }
