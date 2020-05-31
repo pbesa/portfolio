@@ -783,11 +783,11 @@ header{
 	width: 100%;
 	border-bottom: 1px solid darken($white,90%);
 	float: left;
-	.desc,.year{
-		float: left;
+	@include media-breakpoint-down(lg){
+
 	}
-	.desc{
-		width: calc(100% - 150px);
+	.role {
+		width: 100%;
 		h4{
 			span{
 				color: darken($white,45%);
@@ -798,8 +798,12 @@ header{
 			margin-bottom: 0;
 		}
 	}
+	.desc{
+		width: 100%;
+	}
 	.year{
-		width: 150px;
+		width: 100%;
+		color: $primary;
 	}
 }
 
@@ -811,6 +815,21 @@ header{
 		margin-bottom: 10px;
 	}
 }
+.skills {
+		h4 {
+		color: $white;
+    margin: 0;
+    font-size: 18px;
+		background: $primary;
+    padding: 15px 25px;
+    border-radius: 30px;
+		}
+		// &:hover {
+		// 	& .progress {
+		// 		display: block;
+		// 	}
+		// }
+}
 //PROGRESS BAR
 .progress{
 	height: 4px;
@@ -818,6 +837,9 @@ header{
 	background: lighten($black,5%);
 	overflow: visible;
 	@include border-radius(0);
+	margin-top: 20px;
+  transition: 0.5s all ease;
+  display: none;
 }
 .progress-bar{
 	background: $primary;
@@ -841,8 +863,8 @@ header{
 	}
 	span{
 		position: absolute;
-		top: -34px;
-		right: 0;
+		bottom: -23px;
+    right: -7px;
 		color: $secondary;
 	}
 	&.color-1{
