@@ -77,3 +77,13 @@ button#loginbutton:hover {
     cursor: pointer;
     background: #fb8686;
 }
+.footer {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 0.8rem;
+	font-weight: 100;
+	width: 80%;
+	margin: 20px auto;
+}
+.footer a {
+	color: rgb(239, 92, 92);
+}
