@@ -1030,7 +1030,7 @@ textarea.form-control {
 
 
 .ftco-section {
-	padding: 7em 0;
+	padding: 7em 0 3em;
 }
 
 .ftco-bg-dark {
@@ -1185,6 +1185,9 @@ textarea.form-control {
 		font-weight: 700;
 		font-size: 40px;
 	}
+	p {
+		padding: 0 9%;
+	}
 }
 
 //COVER BG
@@ -1209,6 +1212,9 @@ textarea.form-control {
 	cursor: -webkit-zoom-in;
 	cursor: -moz-zoom-in;
 	cursor: zoom-in;
+	img {
+		margin-bottom: 10%;
+	}
 }
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
