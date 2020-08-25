@@ -1938,3 +1938,17 @@ textarea.form-control {
 .center {
 	text-align: center;
 }
+
+.skills {
+	ul {
+		padding-left: 0;
+		li{
+			list-style: none;
+			span {
+				padding-right: 10px;
+				color: $primary;
+			}
+			
+		}
+	}
+}

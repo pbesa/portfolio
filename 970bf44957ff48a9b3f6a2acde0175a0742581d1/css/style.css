@@ -10342,4 +10342,15 @@ textarea.form-control {
   text-align: center;
 }
 
+.skills ul {
+  padding-left: 0;
+}
+.skills ul li {
+  list-style: none;
+}
+.skills ul li span {
+  padding-right: 10px;
+  color: #ef5c5c;
+}
+
 /*# sourceMappingURL=style.css.map */
