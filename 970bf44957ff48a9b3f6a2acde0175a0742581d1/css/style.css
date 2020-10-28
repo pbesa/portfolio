@@ -9271,7 +9271,7 @@ header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-bra
   }
 }
 .wrap .about-desc .bold-text {
-  margin-bottom: -180px;
+  margin: 0 0 -180px 20px;
   right: 0;
   bottom: 0;
   font-weight: 700 !important;
