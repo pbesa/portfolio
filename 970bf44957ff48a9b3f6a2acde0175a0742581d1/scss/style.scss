@@ -1,10 +1,9 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
-$font-primary: 'Poppins',Arial, sans-serif;
-
 $white: #fff;
 $black: #121212;
+$dark-gray: #272727;
 $primary: #ef5c5c;
 
 
@@ -12,7 +11,7 @@ html {
 	// overflow-x: hidden;
 }
 body {
-	font-family: $font-primary;
+	font-family: $font-body;
 	background: url(../images/crossword.png);
 	font-size: 18px;
 	line-height: 1.8;
@@ -107,8 +106,8 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.5;
-	color: black;
-	font-weight: 400;
+	color: $dark-gray;
+	font-weight: 600;
 }
 
 .text-primary {
@@ -1951,4 +1950,8 @@ textarea.form-control {
 			
 		}
 	}
+}
+
+.divisor {
+	border-top: 1px solid rgba($dark-gray, 0.2);
 }

@@ -5,6 +5,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8545,7 +8547,7 @@ h3 {
   }
 }
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   background: url(../images/crossword.png);
   font-size: 18px;
   line-height: 1.8;
@@ -8637,8 +8639,8 @@ a.button:hover {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: black;
-  font-weight: 400;
+  color: #272727;
+  font-weight: 600;
 }
 
 .text-primary {
@@ -10351,6 +10353,10 @@ textarea.form-control {
 .skills ul li span {
   padding-right: 10px;
   color: #ef5c5c;
+}
+
+.divisor {
+  border-top: 1px solid rgba(39, 39, 39, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
