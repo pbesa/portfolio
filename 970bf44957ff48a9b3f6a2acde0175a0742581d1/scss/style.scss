@@ -1955,3 +1955,39 @@ textarea.form-control {
 .divisor {
 	border-top: 1px solid rgba($dark-gray, 0.2);
 }
+
+.white-section {
+	background-color: #fff;
+}
+
+.capitalize {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.survey-data {
+	border-radius: 10px;
+	padding: 3%;
+	text-align: center;
+	background-color: rgb(204 204 204 / 0.4);
+	h1, h2, h3, h4 {
+		color: darken($white,45%);
+	}
+	.icon {
+		font-size: 50px;
+	}
+
+}
+
+@media screen and (min-width: 320px){
+	.data-box {
+		flex: 0 0 100%;
+		@media screen and (min-width: 500px){
+			flex: 0 0 46%;
+			max-width: 46%;
+		}
+		@media screen and (min-width: 992px){
+			flex: 0 0 23%;
+			
+		}
+	}
+}
