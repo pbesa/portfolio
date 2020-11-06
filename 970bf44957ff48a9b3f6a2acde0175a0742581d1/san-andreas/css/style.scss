@@ -1,7 +1,7 @@
 $c-light-gray: #d1d1d1;
 $c-hover: #b1ab20; //gold
 $c-darker: #606060;
-$c-hover2: $c-darker * 1.5;
+$c-hover2: darken($c-darker, 1.5);
 $c-bg1: #fff;
 $trans: 0.5s ease 0s;
 $c-bborder: #e0e0e0; //bottle box border
@@ -28,8 +28,13 @@ $i-pinot-n: url(../imgs/wines/wine-mock-pinot-noir.png) no-repeat left top;
 @import 'fonts';
 //
 
+h1, h2, h3, h4, h5 {
+	font-family: $f-headlines;
+}
 
-
+.flex {
+	display: flex;
+}
 
 body {
 	background: $bg-subtle;
@@ -38,7 +43,6 @@ body {
 #logo {
 	background: url(../imgs/logos/logo-san-andreas.svg) no-repeat center;
 	background-size: cover;
-	height: 40px;
 	width: 100px;
 	margin:  0 2%;
 	float: left;
