@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .flex {
-	display: flex;
+	display: block;
 }
 
 body {
@@ -50,13 +50,21 @@ body {
 		opacity: 0.5;
 	}
 }
-
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.top-fold {
 	width: 100%;
 	height: 85vh;
+	margin-top: 70px;
 	position: relative;
 	background: #fff;
 	overflow: hidden;
+	
 	.background {
 		background: $bg-header no-repeat center;
 		background-size: cover;
@@ -65,18 +73,41 @@ header {
 	
 	.slogan {
 		position: absolute;
-		height: 195px;
-		width: 104px;
 		top: 250px;
 		left: 20px;
-		background: url(../imgs/slogan.png) no-repeat center;
-		
+		// background: url(../imgs/slogan.png) no-repeat center;
+		line-height: 1.3;
+		font-size: 23px;
+		text-align: center;
+		color: $c-darker;
+		border: 5px double $c-bborder;
+		border-right: 0;
+		border-left: 0;
+		padding: 4px;
+		h1 {
+			color: $c-hover;
+		}
+		h4{
+			color: $c-light-gray;
+			text-transform: uppercase;
+			font: $f-copy;
+			font-size: 20px;
+			&:nth-of-type(2){
+				margin-top: 5px;
+			}
+		}
+		span {
+			display: block;
+			width: 60%;
+			height: 1px;
+			background-color: $c-darker;
+		}
 	}
 	
 	.head-wine {
 		height: 500px;
 		width: 200px;
-		background: $pic-header1 no-repeat;
+		background: $pic-header1 no-repeat center right;
 		background-size: contain;
 		position: absolute;
 		right: -55px;;
@@ -95,24 +126,24 @@ header {
 }
 
 .container {
-	width: 320px;
+	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
 .mid-sec {
-	margin-top: 5% 0;
+	width: 100%;
+	margin: 5% 0;
 	p{
-		width: 90%;
-		padding: 15% 3%;
 		font: $f-copy;
 		color: $c-darker;
 	}
 }
 
 .bottles-sec {
-	margin: 5%;
-	background: #fff;
+	.open {
+		background: #fff;
+	}
 	.bottle-box {
 		padding: 10px;
 		border: 1px $c-bborder solid;
@@ -194,8 +225,9 @@ footer {
 			font: $f-copy;
 			color: $c-darker;
 			transition: $trans;
+			text-transform: capitalize;
 		&:hover {
-			color: $c-hover2;
+			color: $c-hover;
 			}
 		}
 		p{
@@ -253,7 +285,7 @@ footer {
 
 #pairing {
 	background: url(../imgs/slider/wine-food.jpeg) no-repeat center;
-	height: 100%;
+	height: 100vh;
 	background-size: cover;
 	position: relative;
 	width: 100%;
@@ -262,6 +294,7 @@ footer {
 		position: absolute;
 		bottom: 50%;
 		left: 5%;
+		right: 5%;
 		font-family: $f-headlines;
 		text-align: center;
 		text-shadow: 1px 1px 10px #000;
@@ -294,7 +327,7 @@ footer {
 		width: 568px;
 	}
 	
-	header {
+	.top-fold {
 		height: 85vh;
 	
 		.corkscrew {
@@ -308,6 +341,7 @@ footer {
 		.slogan {
 			left: 25%;
 			top: 100px;
+			
 		}
 	}
 	
@@ -317,8 +351,8 @@ footer {
 		}
 	}
 	
-	.mid-sec p{
-		padding: 5% 0%;
+	.mid-sec {
+
 	}
 	
 	footer{
@@ -335,9 +369,11 @@ footer {
 	.container {
 		width: 80%;
 	}
+	.flex {
+		display: flex;
+	}
 	
-	header {
-		height: 50vh;
+	.top-fold {
 		
 		.corkscrew {
 			width: 250px;
@@ -347,11 +383,18 @@ footer {
 			top: 220px;
 		}
 	}
+	#pairing h1 {
+		right: auto;
+	}
 	
 	.bottles-sec {
 		p{
 			margin-right: 20px;
 		}
+	}
+	.mid-sec {
+		margin: 5%;
+
 	}
 	.menu {
 		ul {
@@ -369,8 +412,11 @@ footer {
 		max-width:  1200px;
 	}
 	
-	header {
+	.top-fold {
 		height: 100vh;
+		.container {
+			max-width: 1220px;
+		}
 		
 		.corkscrew {
 			height: 350px;
@@ -380,9 +426,6 @@ footer {
 		.slogan {
 			top: 400px;
 			left: 50px;
-			width: 200px;
-			height: 250px;
-			background-size: contain;
 		}
 		
 		.head-wine {
@@ -397,9 +440,6 @@ footer {
 	}
 	
 	.mid-sec {
-		float: left;
-		max-width: 50%;
-		margin: 5% 0;
 	}
 	
 	.ft-col {
