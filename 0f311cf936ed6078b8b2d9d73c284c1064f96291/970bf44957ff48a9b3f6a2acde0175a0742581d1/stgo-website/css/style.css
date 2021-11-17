@@ -1,0 +1,383 @@
+*{box-sizing: border-box}
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+#logo {
+    background: url(../imgs/stgo-logo2.svg) top left no-repeat;
+    height: 50px;
+    width: 100px;
+	float: left;
+
+}
+.nav {
+	position: fixed;
+	top: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.overlay {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+#logo:hover, .down:hover, nav ul li a:hover {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+a, p, h2, h3, h4 {
+    color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+    margin-bottom: 10%;
+    text-decoration: none;
+}
+h1 {
+	color: #fff;
+	font-family: 'Amatic SC', cursive;
+}
+
+/*-------------Backgrounds---------------*/
+
+#home,
+#intro,
+#outdoors,
+#nightlife,
+#sightseeing,
+#food {
+    position: relative;
+    height: 100vh;
+	animation: fade .5s ease-out;
+}
+
+@keyframes fade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#home {
+    background: url(../imgs/welcome.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+#intro {background: url(../imgs/sunset.jpg) top right no-repeat fixed;
+    background-size: cover;
+}
+
+#outdoors {background: url(../imgs/la-parva.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+#nightlife {
+    background: url(../imgs/nightlife.jpg) right no-repeat fixed; background-size: cover
+}
+
+#sightseeing {background: url(../imgs/sightseens.jpg) right bottom no-repeat fixed;
+background-size: cover;
+}
+
+#food {
+    background: url(../imgs/cazuela.jpg) center no-repeat fixed;
+    background-size: cover
+}
+
+/*--------End--of---Backgrounds---------------*/
+
+
+.title {
+	position: absolute;
+	top: 25%;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 500px;
+	margin: auto;
+	right: 0;
+	left: 0;
+
+}
+.title h1 {
+	font-size: 360%;
+}
+
+.bg-title {
+    position: absolute;
+    top: 35%;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 400%;
+    max-width: 500px;
+	animation: slide-in-left 1s ease-out;
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; margin-left: -50%; }
+  to { opacity: 1; margin-left: 0%; }
+}
+
+.title h2{
+    margin-bottom: 50px;
+}
+
+.down {
+    width: 50px;
+	height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+	right: 0;
+	margin: auto;
+    font-size: 11px;
+    text-align: center;
+	background: url(../imgs/arrow-down.svg) no-repeat center;
+}
+
+a.down {
+/*    margin: 0;*/
+}
+
+a.backhome:hover {
+	transform: rotate(180deg);
+}
+
+
+.open-box {
+    border: #fff solid 1px;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.open-box:hover {
+    background-color: rgba(149, 154, 22, 0.4);
+    transition: 1s ease;
+}
+
+
+/*Modal STARTS HERE*/
+
+.modal-container {
+    position: relative;
+    background-color: rgba(0,0,0,0.9);
+    left: -1000px;
+    height: 100vh;
+    overflow: hidden;
+	overflow-y: scroll;
+	width: 100%;
+    border-radius: 25px;
+	z-index: 9;
+	transition: all 0.5s;
+}
+.modal-wrap {
+	padding: 4%;
+	max-width: 1000px;
+
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    z-index: 9;
+		display: none;
+		transition: none;
+		cursor: pointer;
+}
+.modal-container.open {
+	left: 0;
+	transition: all 0.5s;
+}
+
+.modal-container h2 {
+	font-family: 'Amatic SC', cursive;
+    margin: 0;
+    text-align: left;
+	font-size: 75px;
+	clear: both;
+}
+
+.modal-container h3{
+  margin-bottom: 5%;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.modal-container p {
+	font-size: 16px:
+}
+
+.pic-size {
+    width: 100%;
+	height: 200px;
+	margin: 5% 0;
+	border-radius: 20px;
+}
+.info-block {
+    float: left;
+    width: 100%;
+    margin: 5% 0px;
+		padding-right: 3%;
+	overflow: hidden;
+}
+.category {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 2%;
+}
+
+.close-btn {
+  position: absolute;
+	background: url(../imgs/close-btn.svg) no-repeat center;
+    right: 30px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+
+.seemore-btn {
+    float: left;
+    margin-top: 5%;
+    border: #fff solid 1px;
+    padding: 5px 25px;
+    border-radius: 20px;
+    clear: both;
+}
+
+.close-btn:hover {
+	opacity: .6;
+    transition: all 1s ease;
+}
+/*IMAGES
+outdoors*/
+#portillo {background: url(../imgs/Portillo-01.jpg) no-repeat bottom; background-size: cover;}
+#vallenevado {background: url(../imgs/ski-holidays-valle-nevado-a793.jpg) no-repeat center; background-size: cover;}
+#cousino {background: url(../imgs/cousino-macul.jpg) no-repeat center; background-size: cover;}
+#uncorked {background: url(../imgs/uncorked-tours.jpg) no-repeat center; background-size: cover;}
+#metropolitan {background: url(../imgs/parque-metropolitano.jpg) no-repeat center; background-size: cover;}
+#quintanormal {background: url(../imgs/quinta-normal-park.jpg) no-repeat center; background-size: cover;}
+/*nightlife*/
+#lapiojera {background: url(../imgs/la-piojera11.jpg) no-repeat center; background-size: cover;}
+#dosgardenias {background: url(../imgs/bar-dos-gardenias.jpg) no-repeat center; background-size: cover;}
+#flannery {background: url(../imgs/flannery-s-irish-geo.jpg) no-repeat center; background-size: cover;}
+#barconsti {background: url(../imgs/bar-constitucion.jpg) no-repeat center; background-size: cover;}
+/*sightseeings*/
+#plazadearmas {background: url(../imgs/plaza-de-armas-santiago.jpg) no-repeat center; background-size: cover;}
+#bellasartes {background: url(../imgs/museo_bellas_artes.jpg) no-repeat center; background-size: cover;}
+#sancristobal {background: url(../imgs/san-cristobal.jpg) no-repeat center; background-size: cover;}
+#santalucia {background: url(../imgs/cerro-santa-lucia-1.jpg) no-repeat center; background-size: cover;}
+#lamoneda {background: url(../imgs/la-moneda.jpg) no-repeat center; background-size: cover;}
+#costanera {background: url(../imgs/costanera-center.jpg) no-repeat center; background-size: cover;}
+/*food*/
+#empanadas {background: url(../imgs/empandas.jpg) no-repeat center; background-size: cover;}
+#pastelchoclo {background: url(../imgs/Pastel_de_choclo.jpg) no-repeat center; background-size: cover;}
+#sopaipillas {background: url(../imgs/sopaipillas.jpg) no-repeat center; background-size: cover;}
+#machas {background: url(../imgs/machas.jpg) no-repeat center; background-size: cover;}
+#cazu {background: url(../imgs/cazuela-small.jpg) no-repeat center; background-size: cover;}
+#chorrillana {background: url(../imgs/chorrillana.jpg) no-repeat center; background-size: cover;}
+
+
+/*LIGHTBOX ENDS HERE*/
+
+/*Landscape Phones*/
+
+@media screen and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+	.title h2{
+    margin-top: 10%;
+	}
+}
+
+/*Tablet starts here */
+
+@media screen and (min-width: 768px){
+    .bg-title {
+    left: 30px;
+	top: 60%;
+    max-width: 600px;
+	font-size: 400%;
+    }
+
+    #logo {
+    height: 60px;
+    width: 120px;
+    }
+
+    .title {
+		top: 30%;
+		margin-left: 5%;
+		padding: 0px 50px;
+		text-align: left;
+		line-height: 1.5;
+		max-width: 700px;
+    }
+
+    .modal-container {
+    max-width: 800px;
+
+    }
+
+    .info-block {
+    float: left;
+    width: 50%;
+	}
+	.modal-container p {
+		font-size: 18px;
+	}
+
+/*Desktop version starts here */
+
+@media screen and (min-width: 1024px){
+    .title {
+    top: 40%;
+    max-width: 800px;
+    }
+
+    .modal-container {
+    max-width: 1000px;
+    }
+
+	#logo {
+		widows: 300px;
+		height: 70px;
+	}
+
+	.bg-title {
+		font-size: 500%;
+		max-width: 1000px;
+	}
+
+}
+
+/*CLEARFIX*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
