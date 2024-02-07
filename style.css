@@ -10,7 +10,7 @@ body {
 	border-radius: 3px;
 	background: rgba(0, 0, 0, 0.7);
   padding: 12px;
-  margin: auto;
+  margin: 20px auto;
 
 }
 /* .glasses {
@@ -105,16 +105,29 @@ p {
 }
 h3 {
 	text-transform: uppercase;
-    font-size: small;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     color: #333;
 }
 h1 {
-	ont-size: 1.5rem;
+	font-size: 1rem;
     font-weight: 700;
     line-height: 120%;
 }
 
 input#password {
     padding: 4px 10px;
+}
+
+/* breakpoints */
+@media only screen and (min-width: 600px) {
+h1 {
+	font-size: 1.5rem;
+}
+p {
+	font-size: 1.1rem;
+}
+h3 {
+	font-size: medium;
+}
 }
