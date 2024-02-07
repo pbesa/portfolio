@@ -87,3 +87,34 @@ button#loginbutton:hover {
 .footer a {
 	color: rgb(239, 92, 92);
 }
+
+.footer a:hover {
+	color:#fb8686;
+}
+
+p {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 1rem;
+	font-weight: 100;
+	width: 80%;
+	margin: 0 auto;
+}
+.main-info-block h1, 
+.main-info-block h3 {
+	margin: 0;
+}
+h3 {
+	text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 2px;
+    color: #333;
+}
+h1 {
+	ont-size: 1.5rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+input#password {
+    padding: 4px 10px;
+}
