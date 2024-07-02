@@ -4,8 +4,8 @@
 $white: #fff;
 $black: #121212;
 $dark-gray: #272727;
-$primary: #ef5c5c;
-
+$primary: #4e78f5;
+//old primary #ef5c5c;
 
 html {
 	// overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
 	font-size: 18px;
 	line-height: 1.8;
 	font-weight: 400;
-	color: darken($white,45%);
+	color: darken($white,65%);
 	position: relative;
 	&:after{
 		position: fixed;
