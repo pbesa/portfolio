@@ -1,0 +1,53 @@
+$white: #fff;
+$black: #121212;
+$dark-gray: #272727;
+$my-primary: #17a2b8;
+//old primary #ef5c5c;
+$my-secondary: #f4885d;
+
+//SKILLS--------------------
+.progress-wrap{
+	margin-bottom: 30px;
+	h4{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+}
+.skills {
+		h4 {
+		color: $white;
+    margin: 0;
+    font-size: 18px;
+		background: $primary;
+    padding: 15px 25px;
+    border-radius: 30px;
+		}
+		// &:hover {
+		// 	& .progress {
+		// 		display: block;
+		// 	}
+		// }
+}
+
+.color-primary {
+	color: $my-primary!important;
+}
+.color-secondary {
+	color: $my-secondary;
+}
+.bold {
+    font-weight: 700;
+}
+.button-ghost {
+    border: 1px solid $my-secondary;
+    color: $my-secondary;
+    padding: 5px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+    &:hover {
+        background-color: $my-secondary;
+        color: $white;
+        text-decoration: none;
+
+    }
+}

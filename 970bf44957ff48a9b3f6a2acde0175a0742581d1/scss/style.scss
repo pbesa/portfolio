@@ -1,11 +1,8 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
+@import 'custom';
 
-$white: #fff;
-$black: #121212;
-$dark-gray: #272727;
-$primary: #4e78f5;
-//old primary #ef5c5c;
+
 
 html {
 	// overflow-x: hidden;
@@ -79,7 +76,7 @@ body {
 	  height: 100%;
 	  z-index:99;
 	  max-width: 100%;
-	  background-color: $primary;
+	  background-color: $my-secondary;
 	  -webkit-transition: width .6s ease;
 	  -o-transition: width .6s ease;
 	  transition: width .6s ease;
@@ -87,20 +84,22 @@ body {
 }
 a {
 	transition: .3s all ease;
-	color: $primary;
+	color: $my-secondary;
+	font-weight: 500;
 
 	&:hover {
-		text-decoration: none;
-		color: $primary;
+		text-decoration: underline;
+		color: $my-secondary;
 	}
 	&.button {
-    border: 1px solid $primary;
-    padding: 5px 10px;
-    border-radius: 5px;
+		padding: 5px 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		background-color: $my-primary;
+		color: $white;
 	}
 	&.button:hover {
-		background-color: $primary;
-		color: $white;
+		background-color: lighten($my-primary,10%);
 	}
 }
 h1, h2, h3, h4, h5,
@@ -109,11 +108,6 @@ h1, h2, h3, h4, h5,
 	color: $dark-gray;
 	font-weight: 600;
 }
-
-.text-primary {
-	color: $primary!important;
-}
-
 
 #colorlib-main-nav {
 	position: absolute;
@@ -276,9 +270,9 @@ h1, h2, h3, h4, h5,
 			&.active{
 				a{
 					span{
-						color: $primary;
+						color: $my-primary;
 						&:before {
-							background: $primary;
+							background: $my-primary;
 							visibility: visible;
 							-webkit-transform: scaleX(1);
 							-moz-transform: scaleX(1);
@@ -495,7 +489,7 @@ header{
 			}
 			&.active {
 				span {
-					background: $primary;
+					background: $my-primary;
 				}
 			}
 		}
@@ -523,7 +517,7 @@ header{
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			height: calc(100vh - 0);
+			height: calc(100vh);
 			min-height: 700px;
 			position: relative;
 			.overlay{
@@ -533,7 +527,7 @@ header{
 				right: 0;
 				bottom: 0;
 				content: '';
-				background: $primary;
+				background: $my-primary;
 				opacity: 0;
 			}
 			.slider-text {
@@ -676,7 +670,7 @@ header{
 }
 
 .bg-primary{
-	background: $primary;
+	background: $my-primary;
 }
 
 .btn {
@@ -696,9 +690,9 @@ header{
 			color :$black;
 		}
 		&.btn-outline-primary {
-			border: 1px solid $primary;
+			border: 1px solid $my-primary;
 			background: transparent;
-			color :$primary;
+			color :$my-primary;
 			&:hover {
 				border: 1px solid transparent;
 				background: $black;
@@ -802,33 +796,11 @@ header{
 	}
 	.year{
 		width: 100%;
-		color: $primary;
+		color: $my-primary;
 	}
 }
 
-//SKILLS--------------------
-.progress-wrap{
-	margin-bottom: 30px;
-	h4{
-		font-size: 20px;
-		margin-bottom: 10px;
-	}
-}
-.skills {
-		h4 {
-		color: $white;
-    margin: 0;
-    font-size: 18px;
-		background: $primary;
-    padding: 15px 25px;
-    border-radius: 30px;
-		}
-		// &:hover {
-		// 	& .progress {
-		// 		display: block;
-		// 	}
-		// }
-}
+
 //PROGRESS BAR
 .progress{
 	height: 4px;
@@ -841,7 +813,7 @@ header{
   display: none;
 }
 .progress-bar{
-	background: $primary;
+	background: $my-secondary;
 	box-shadow: none;
 	line-height: 1.2;
 	color: $black;
@@ -857,7 +829,7 @@ header{
 		width: 10px;
 		height: 10px;
 		content: '';
-		background: $primary;
+		background: $my-secondary;
 		@include border-radius(50%);
 	}
 	span{
@@ -867,9 +839,9 @@ header{
 		color: $secondary;
 	}
 	&.color-1{
-		background: $primary;
+		background: $my-secondary;
 		&:after{
-			background: $primary;
+			background: $my-secondary;
 		}
 	}
 }
@@ -883,7 +855,7 @@ header{
 	.icon{
 		span{
 			position: relative;
-			color: $primary;
+			color: $my-primary;
 			font-size: 40px;
 			z-index: 0;
 			line-height: 1.5;
@@ -981,7 +953,7 @@ textarea.form-control {
 }
 
 .bg-primary {
-	background: $primary!important;
+	background: $my-primary!important;
 }
 .ftco-section {
 	.ftco-sub-title {
@@ -1008,7 +980,7 @@ textarea.form-control {
 			font-weight: 500;
 			font-size: 16px;
 			margin-bottom: 0;
-			color: $primary;
+			color: $my-primary;
 		}
 		.position{
 			font-size: 13px;
@@ -1112,7 +1084,7 @@ textarea.form-control {
 		a {
 			margin: 0 10px 10px 0;
 			&:hover, &:focus {
-				color: $primary;
+				color: $my-primary;
 			}
 		}
 	}
@@ -1121,7 +1093,7 @@ textarea.form-control {
 	.ftco-icon {
 		width: 100px;
 		span {
-			color: $primary;
+			color: $my-primary;
 		}
 	}
 }
@@ -1146,7 +1118,7 @@ textarea.form-control {
 	.icon {
 		font-size: 50px;
 		display: block;
-		color: $primary;
+		color: $my-primary;
 	}
 	&.text-center {
 		.ftco-icon {
@@ -1248,7 +1220,7 @@ textarea.form-control {
 		strong.number{
 			font-weight: 400;
 			font-size: 180px;
-			color: $primary;
+			color: $my-primary;
 			@include media-breakpoint-down(sm){
 				font-size: 80px;
 			}
@@ -1298,7 +1270,7 @@ textarea.form-control {
 			a {
 				color: $white;
 				&:hover, &:focus, &:active {
-					color: $primary;
+					color: $my-primary;
 				}
 			}
 		}
@@ -1380,7 +1352,7 @@ textarea.form-control {
 			}
 			&.active {
 				a, span {
-					background: $primary;
+					background: $my-primary;
 					color: $white;
 					border: 1px solid transparent;
 				}
@@ -1473,9 +1445,9 @@ textarea.form-control {
 						position: absolute;
 						content: "\e316";
 						transition: .3s all ease;
-						background: $primary;
+						background: $my-primary;
 						color: $white;
-						border: 1px solid $primary;
+						border: 1px solid $my-primary;
 					}
 				}
 				&[aria-expanded="false"] {
@@ -1551,7 +1523,7 @@ textarea.form-control {
 				transition: .3s all ease;
 				&.active {
 
-					background: $primary;
+					background: $my-primary;
 				}
 			}
 		}
@@ -1562,7 +1534,7 @@ textarea.form-control {
 	.contact-info{
 		p{
 			a{
-				color: lighten($primary,0);
+				color: lighten($my-primary,0);
 			}
 			span{}
 		}
@@ -1581,9 +1553,15 @@ textarea.form-control {
 
 .block-3 {
 	width: 100%;
+	border-bottom: 1px solid rgba($black,.1);
+	background-color: $white;
 	.image{
 		width: 100%;
-		padding: 10% 7%;
+		height: 60%;
+		display: flex;
+		align-self: center;
+		// padding: 10% 7%;
+		filter: grayscale(1);
 		@include media-breakpoint-up(md) {
 			width: 40%;
 			padding: 10% 7%;
@@ -1591,7 +1569,7 @@ textarea.form-control {
 		.icon{
 			width: 100px;
 			height: 100px;
-			background: $primary;
+			background: $my-primary;
 			@include border-radius(50%);
 			@include transition(.3s);
 			span{
@@ -1600,6 +1578,7 @@ textarea.form-control {
 			opacity: 0;
 		}
 		&:hover{
+			filter: grayscale(0);
 			.icon{
 				opacity: 1;
 			}
@@ -1624,7 +1603,8 @@ textarea.form-control {
 			font-size: 30px;
 			margin-bottom: 30px;
 			a{
-				color: $black;
+				color: $dark-gray;
+				font-weight: 600;
 			}
 		}
 		p {
@@ -1638,7 +1618,8 @@ textarea.form-control {
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include media-breakpoint-down(sm) {
-			height: 300px;
+			height: 160px;
+			margin: 4% 0;
 		}
 	}
 }
@@ -1676,7 +1657,7 @@ textarea.form-control {
 				margin: 0;
 				border-radius: 50%!important;
 				font-size: 16px;
-				background: $primary;
+				background: $my-primary;
 				color: $white;
 				&:hover, &:focus {
 					color: $white;
@@ -1945,7 +1926,7 @@ textarea.form-control {
 			list-style: none;
 			span {
 				padding-right: 10px;
-				color: $primary;
+				color: $my-primary;
 			}
 			
 		}
@@ -1968,7 +1949,7 @@ textarea.form-control {
 	border-radius: 10px;
 	padding: 3%;
 	text-align: center;
-	background-color: rgb(204 204 204 / 0.4);
+	background-color: rgb(204 204 204 / 0.1);
 	h1, h2, h3, h4 {
 		color: darken($white,45%);
 	}
